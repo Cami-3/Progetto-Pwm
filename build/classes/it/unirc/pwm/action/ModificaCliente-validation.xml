@@ -1,0 +1,77 @@
+<!DOCTYPE validators PUBLIC "-//Apache Struts//XWork Validator 1.0.3//EN"
+        "http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+<validators>
+
+	<field name="email">
+		<field-validator type="requiredstring">
+			<message>Inserire l'email.</message>
+		</field-validator>
+		<field-validator type="email">
+			<message>L'email ${email} non è valida</message>
+		</field-validator>
+	</field>
+	<field name="account.numero">
+		<field-validator type="requiredstring">
+			<message>Inserire il numero corretto</message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">10</param>
+			<param name="maxLength">10</param>
+			<message>Il numero deve essere di 10 caratteri.
+			</message>
+		</field-validator>
+	</field>
+	<field name="cliente.iban">
+		<field-validator type="requiredstring">
+			<message>Inserire l'iban</message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">11</param>
+			<param name="maxLength">11</param>
+			<message>L'iban deve essere di 11 caratteri.
+			</message>
+		</field-validator>
+	</field>
+
+	<field name="cliente.nome">
+		<field-validator type="requiredstring">
+			<message>Inserire il nome.</message>
+		</field-validator>
+	</field>
+
+	<field name="cliente.cognome">
+		<field-validator type="requiredstring">
+			<message>Inserire il cognome.</message>
+		</field-validator>
+	</field>
+ 
+
+
+	<field name="cliente.CF">
+		<field-validator type="requiredstring">
+			<message>Inserire il codice fiscale.</message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">16</param>
+			<param name="maxLength">16</param>
+			<message>Il Cf non è valido. </message>
+		</field-validator>
+	</field>
+
+<field name="password">
+		<field-validator type="requiredstring">
+			<message key="password.required">.</message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">6</param>
+			<param name="maxLength">10</param>
+			<message>La password deve essere compresa tra 6 e 10 caratteri.</message>
+		</field-validator>
+		<field-validator type="passwordstrenght">
+			<message>La password deve contenere caratteri minuscoli, maiuscoli
+				e numeri.</message>
+		</field-validator>
+	</field>
+
+
+</validators>

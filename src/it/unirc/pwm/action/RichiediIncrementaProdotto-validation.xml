@@ -1,0 +1,15 @@
+
+<!DOCTYPE validators PUBLIC "-//Apache Struts//XWork Validator 1.0.3//EN"
+        "http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+<validators>
+	<field name="taglia">
+		<field-validator type="requiredstring">
+			<message>Inserire la taglia</message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">1</param>
+			<message>Inserire la taglia corretta
+			</message>
+		</field-validator>
+		</field>
+		</validators>

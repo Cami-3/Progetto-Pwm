@@ -1,0 +1,47 @@
+<!DOCTYPE validators PUBLIC "-//Apache Struts//XWork Validator 1.0.3//EN"
+        "http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+<validators>
+
+	<field name="p.nome">
+		<field-validator type="requiredstring">
+			<message>Inserire il nome.</message>
+		</field-validator>
+			</field>
+	<field name="p.marca">
+		<field-validator type="requiredstring">
+			<message>Inserire la marca</message>
+		</field-validator>
+	</field>
+	<field name="p.genere">
+		<field-validator type="requiredstring">
+			<message>Inserire il genere</message>
+		</field-validator>
+	</field>
+
+	<field name="p.prezzo">
+		<field-validator type="required">
+			<message>Inserire il prezzo</message>
+		</field-validator>
+	</field>
+
+	<field name="p.taglia">
+		<field-validator type="required">
+			<message>Inserire la taglia</message>
+		</field-validator>
+	</field>
+
+
+	<field name="p.colore">
+		<field-validator type="requiredstring">
+			<message>Inserire il colore</message>
+		</field-validator>
+	</field>
+
+<field name="p.tipoCliente">
+		<field-validator type="requiredstring">
+			<message>Inserire il tipo di scarpa</message>
+		</field-validator>
+	</field>
+
+
+</validators>
